@@ -27,8 +27,10 @@ function obtener_valor(variable) {
         var pos_separador = url.indexOf("&", variable_pos);
 
     if (pos_separador != -1) {
+        console.log(url.substring(variable_pos + variable_may.length + 1, url.length));
         return url.substring(variable_pos + variable_may.length + 1, pos_separador);
     } else {
+        console.log(url.substring(variable_pos + variable_may.length + 1, url.length));
         return url.substring(variable_pos + variable_may.length + 1, url.length);
     }
     } else {
