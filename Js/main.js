@@ -183,7 +183,7 @@ function myM(data) {
 
 formSearch.addEventListener("submit", (event) => {
     event.preventDefault();
-     let site = '/results.html?search=';
+     let site = 'Automovil-search/results.html?search=';
      let url = site + inputSearchA.value;
      window.location.replace(url);
 })
