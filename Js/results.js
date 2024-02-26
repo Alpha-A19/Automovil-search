@@ -30,8 +30,8 @@ function obtener_valor(variable) {
         console.log(url.substring(variable_pos + variable_may.length + 1, url.length));
         return url.substring(variable_pos + variable_may.length + 1, pos_separador);
     } else {
-        console.log(url.substring(variable_pos + variable_may.length + 1, url.length));
-        return url.substring(variable_pos + variable_may.length + 1, url.length);
+        console.log(url.substring(variable_pos + variable_may.length + 21, url.length));
+        return url.substring(variable_pos + variable_may.length + 21, url.length);
     }
     } else {
         return "NO_ENCONTRADO";
