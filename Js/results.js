@@ -111,7 +111,9 @@ function getData(data, valor) {
             DivchA.id = "chA-result-search-" + i
             
             let imgLogo = document.createElement("img");
-            imgLogo.src = "https://alpha-a19.github.io/Automovil-search/" + result[i].Img;
+            let str = result[i].Img;
+            let newStr = str.slice(2);
+            imgLogo.src = "https://alpha-a19.github.io/Automovil-search" + newStr;
             
             DivchB.id = "chB-result-search-" + i
             let texA = document.createElement("h2");
