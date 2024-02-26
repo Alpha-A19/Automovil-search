@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diagramas automotrices</title>
+
+    <link rel="stylesheet" href="Style/css bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="Style/style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+</head>
+<body>
+    <header class="header" id="navbar">
+        <a href="#home">
+          <div class="logo">
+            <img src="Resources/logo-general.png" alt="">
+          </div>
+        </a>
+        <div class="hamburger-wrapper" id="toggle"> 
+            <button data-aa-action="aa-action" aria-label="hamburger" type="button" class="hamburger" tabindex="0" data-aa-link-text="hamburger icon close" data-link-action="close" id="btn-menu"> 
+                <ul> 
+                    <li></li> 
+                    <li></li> 
+                    <li></li> 
+                </ul> 
+                <div class="dot"></div> 
+            </button> 
+        </div>
+        <div class="navigation" id="listMenu">
+            <ul>
+                <li>
+                  <a href="#brands">
+                    <lord-icon
+                        src="https://cdn.lordicon.com/baxknfaw.json"
+                        trigger="hover"
+                        colors="primary:#ffffff"
+                        style="width:25px;height:25px">
+                    </lord-icon>
+                    Todas las marcas
+                  </a>
+                </li>
+                <li>
+                    <a href="#">
+                      <lord-icon 
+                      src="https://cdn.lordicon.com/lobpqdog.json"
+                      trigger="hover"
+                      colors="primary:#ffffff"
+                      style="width:25px;height:25px">
+                      </lord-icon>
+                      ¿Lo sabes?
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 7">
+                            <defs></defs><g data-name="Layer 2">
+                             <g>
+                              <polyline class="cls-1" points="1 1 5.89 6 11 1.16"></polyline>
+                             </g>
+                            </g>
+                        </svg>
+                    </a>
+                    <ul>
+                        <li>
+                          <a href="#">Opcion 1</a></li>
+                        <li>
+                          <a href="#">Opcion 2</a></li>
+                        <li>
+                          <a href="#">Opcion 3</a></li>
+                        <li>
+                          <a href="#">Opcion 4</a></li>
+                    </ul>
+                </li>
+                <li>
+                  <a href="#">
+                     <lord-icon 
+                      src="https://cdn.lordicon.com/mfmkufkr.json"
+                      trigger="hover"
+                      colors="primary:#ffffff"
+                      style="width:25px;height:25px">
+                      </lord-icon>
+                    Carrito
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                     <lord-icon 
+                      src="https://cdn.lordicon.com/rsvfayfn.json"
+                      trigger="hover"
+                      colors="primary:#ffffff"
+                      style="width:25px;height:25px">
+                      </lord-icon>
+                    Contáctanos
+                  </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section class="slideshow-principal" id="home"> 
+            <div class="search-Banner">
+              <h1>BUSCA y ENCUENTRA Modelos de Automoviles</h1>
+              <div>
+                <form id="form-search" class="">
+                  <div>
+                    <div>
+                      <input type="text" id="input-search" placeholder="Dinos qué modelo buscas...">
+                      <label for="input-search"></label>
+                    </div>
+                    <a id="search-in-a">
+                      <div class="search-sh">
+                        <lord-icon
+                            src="https://cdn.lordicon.com/kkvxgpti.json"
+                            trigger="hover"
+                            style="width:35px;height:35px">
+                        </lord-icon>
+                      </div>
+                    </a>
+                  </div>
+                </form>
+                <div class="search-option" id="search-option">
+                  <lord-icon
+                      src="https://cdn.lordicon.com/pflszboa.json"
+                      trigger="hover"
+                      colors="primary:#fff"
+                      style="width:35px;height:35px" id="oppIcon">
+                  </lord-icon>
+                </div>
+              </div>
+              <div class="cont-results">
+                <ul class="results" id="results">
+  
+                </ul>
+              </div>
+            </div>
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="8000" style="background-color: #3c3c3c;" id="slide-A">
+                    <img src="Resources/Mechanic/1-14124143252352.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="8000" style="background-color: #515151" id="slide-B">
+                    <img src="Resources/Mechanic/2-12948012741245.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="8000" style="background-color: #666666" id="slide-C">
+                    <img src="Resources/Mechanic/3-17491827458921.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="8000" style="background-color: #8c8c8c" id="slide-D">
+                    <img src="Resources/Mechanic/6-12491124124243.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="8000"
+                  style="background-color: #b5b5b5" id="slide-E">
+                    <img src="Resources/Mechanic/5-17428912798123.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+              </div>
+        </section>
+        
+        <section class="card-shoop" id="card-shoop">
+          <h1>Ayudas para el mantenimiento de tu vehiculo</h1>
+          <div class="wrapper">
+              <!-- item one -->
+              <div class="shoop-card">
+                <div>
+                  <img src="Resources/Pack card/Miniatura.png" alt="">
+                  <h3>Mantenimiento</h3>
+                  <div class="description-card"><span>Lorem, ipsum dolor sit amet <strong>consectetur adipisicing</strong> elit. Explicabo aliquid ullam eligendi doloremque.</span></div>
+                  <a href="" class="btn donwload">Descargar
+                    <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                      <path d="M88 304H80V256H88C101.3 256 112 266.7 112 280C112 293.3 101.3 304 88 304zM192 256H200C208.8 256 216 263.2 216 272V336C216 344.8 208.8 352 200 352H192V256zM224 0V128C224 145.7 238.3 160 256 160H384V448C384 483.3 355.3 512 320 512H64C28.65 512 0 483.3 0 448V64C0 28.65 28.65 0 64 0H224zM64 224C55.16 224 48 231.2 48 240V368C48 376.8 55.16 384 64 384C72.84 384 80 376.8 80 368V336H88C118.9 336 144 310.9 144 280C144 249.1 118.9 224 88 224H64zM160 368C160 376.8 167.2 384 176 384H200C226.5 384 248 362.5 248 336V272C248 245.5 226.5 224 200 224H176C167.2 224 160 231.2 160 240V368zM288 224C279.2 224 272 231.2 272 240V368C272 376.8 279.2 384 288 384C296.8 384 304 376.8 304 368V320H336C344.8 320 352 312.8 352 304C352 295.2 344.8 288 336 288H304V256H336C344.8 256 352 248.8 352 240C352 231.2 344.8 224 336 224H288zM256 0L384 128H256V0z">
+                      </path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+  
+              <!-- item 2 -->
+              <div class="shoop-card">
+                <div>
+                  <img src="Resources/Pack card/Miniatura.png" alt="">
+                  <h3>Limpieza</h3>
+                  <div class="description-card"><span>Lorem, ipsum dolor sit amet <strong>consectetur adipisicing</strong> elit. Explicabo aliquid ullam eligendi doloremque.</span></div>
+                  <a href="" class="btn donwload">Descargar
+                    <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                      <path d="M88 304H80V256H88C101.3 256 112 266.7 112 280C112 293.3 101.3 304 88 304zM192 256H200C208.8 256 216 263.2 216 272V336C216 344.8 208.8 352 200 352H192V256zM224 0V128C224 145.7 238.3 160 256 160H384V448C384 483.3 355.3 512 320 512H64C28.65 512 0 483.3 0 448V64C0 28.65 28.65 0 64 0H224zM64 224C55.16 224 48 231.2 48 240V368C48 376.8 55.16 384 64 384C72.84 384 80 376.8 80 368V336H88C118.9 336 144 310.9 144 280C144 249.1 118.9 224 88 224H64zM160 368C160 376.8 167.2 384 176 384H200C226.5 384 248 362.5 248 336V272C248 245.5 226.5 224 200 224H176C167.2 224 160 231.2 160 240V368zM288 224C279.2 224 272 231.2 272 240V368C272 376.8 279.2 384 288 384C296.8 384 304 376.8 304 368V320H336C344.8 320 352 312.8 352 304C352 295.2 344.8 288 336 288H304V256H336C344.8 256 352 248.8 352 240C352 231.2 344.8 224 336 224H288zM256 0L384 128H256V0z">
+                      </path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+  
+              <!-- item 3 -->
+              <div class="shoop-card">
+                <div>
+                  <img src="Resources/Pack card/Miniatura.png" alt="">
+                  <h3>Herramientas</h3>
+                  <div class="description-card"><span>Lorem, ipsum dolor sit amet <strong>consectetur adipisicing</strong> elit. Explicabo aliquid ullam eligendi doloremque.</span></div>
+                  <a href="" class="btn donwload">Descargar
+                    <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                      <path d="M88 304H80V256H88C101.3 256 112 266.7 112 280C112 293.3 101.3 304 88 304zM192 256H200C208.8 256 216 263.2 216 272V336C216 344.8 208.8 352 200 352H192V256zM224 0V128C224 145.7 238.3 160 256 160H384V448C384 483.3 355.3 512 320 512H64C28.65 512 0 483.3 0 448V64C0 28.65 28.65 0 64 0H224zM64 224C55.16 224 48 231.2 48 240V368C48 376.8 55.16 384 64 384C72.84 384 80 376.8 80 368V336H88C118.9 336 144 310.9 144 280C144 249.1 118.9 224 88 224H64zM160 368C160 376.8 167.2 384 176 384H200C226.5 384 248 362.5 248 336V272C248 245.5 226.5 224 200 224H176C167.2 224 160 231.2 160 240V368zM288 224C279.2 224 272 231.2 272 240V368C272 376.8 279.2 384 288 384C296.8 384 304 376.8 304 368V320H336C344.8 320 352 312.8 352 304C352 295.2 344.8 288 336 288H304V256H336C344.8 256 352 248.8 352 240C352 231.2 344.8 224 336 224H288zM256 0L384 128H256V0z">
+                      </path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+  
+              <!-- item 4 -->
+              <div class="shoop-card">
+                <div>
+                  <img src="Resources/Pack card/Miniatura.png" alt="">
+                  <h3>Recomendaciones</h3>
+                  <div class="description-card"><span>Lorem ipsum dolor sit, <strong>amet consectetur adipisicing elit</strong>. Dignissimos voluptatum praesentium nostrum provident possimus, odit soluta enim ut aliquid placeat.</span></div>
+                  <a href="" class="btn donwload">Descargar
+                    <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                      <path d="M88 304H80V256H88C101.3 256 112 266.7 112 280C112 293.3 101.3 304 88 304zM192 256H200C208.8 256 216 263.2 216 272V336C216 344.8 208.8 352 200 352H192V256zM224 0V128C224 145.7 238.3 160 256 160H384V448C384 483.3 355.3 512 320 512H64C28.65 512 0 483.3 0 448V64C0 28.65 28.65 0 64 0H224zM64 224C55.16 224 48 231.2 48 240V368C48 376.8 55.16 384 64 384C72.84 384 80 376.8 80 368V336H88C118.9 336 144 310.9 144 280C144 249.1 118.9 224 88 224H64zM160 368C160 376.8 167.2 384 176 384H200C226.5 384 248 362.5 248 336V272C248 245.5 226.5 224 200 224H176C167.2 224 160 231.2 160 240V368zM288 224C279.2 224 272 231.2 272 240V368C272 376.8 279.2 384 288 384C296.8 384 304 376.8 304 368V320H336C344.8 320 352 312.8 352 304C352 295.2 344.8 288 336 288H304V256H336C344.8 256 352 248.8 352 240C352 231.2 344.8 224 336 224H288zM256 0L384 128H256V0z">
+                      </path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+          </div>
+      </section>
+
+      <section class="card-shoop cont-card-w" id="brands">
+        <h1>Selecciona la MARCA del Diagrama Eléctrico Automotriz que necesitas:</h1>
+        <div class="wrapper">
+          <div class="card-brand">
+            <a href="results.html?search=acura">
+              <div class="card-img">
+                <img src="Resources/Logos marcas/ACURA.png" alt="">
+              </div>
+              <div class="card-cont">
+                <span class="title-brand">ACURA</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi voluptas.</p>
+              </div>
+            </a>
+          </div>
+          <div class="card-brand">
+            <a href="results.html?search=audi">
+              <div class="card-img">
+                <img src="Resources/Logos marcas/AUDI.png" alt="">
+              </div>
+              <div class="card-cont">
+                <span class="title-brand">AUDI</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi voluptas.</p>
+              </div>
+            </a>
+          </div>
+          <div class="card-brand">
+            <a href="results.html?search=bmw">
+              <div class="card-img">
+                <img src="Resources/Logos marcas/BMW.png" alt="">
+              </div>
+              <div class="card-cont">
+                <span class="title-brand">BMW</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi voluptas.</p>
+              </div>
+            </a>
+          </div>
+          <div class="card-brand">
+            <a href="results.html?search=buick">
+              <div class="card-img">
+                <img src="Resources/Logos marcas/buik.png" alt="">
+              </div>
+              <div class="card-cont">
+                <span class="title-brand">BUICK</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi voluptas.</p>
+              </div>
+            </a>
+          </div>
+          <div class="card-brand">
+            <a href="results.html?search=cadillac">
+              <div class="card-img">
+                <img src="Resources/Logos marcas/Cadillac.png" alt="">
+              </div>
+              <div class="card-cont">
+                <span class="title-brand">CADILLAC</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi voluptas.</p>
+              </div>
+            </a>
+          </div>
+          <div class="card-brand">
+            <a href="results.html?search=chevrolet">
+              <div class="card-img">
+                <img src="Resources/Logos marcas/Chevrolet-Logo-700x394.png" alt="">
+              </div>
+              <div class="card-cont">
+                <span class="title-brand">CHEVROLET</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi voluptas.</p>
+              </div>
+            </a>
+          </div>
+          <div class="card-brand">
+            <a href="results.html?search=chrysler">
+              <div class="card-img">
+                <img src="Resources/Logos marcas/Chrysler.png" alt="">
+              </div>
+              <div class="card-cont">
+                <span class="title-brand">CHRYSLER</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi voluptas.</p>
+              </div>
+            </a>
+          </div>
+          <div class="card-brand">
+            <a href="results.html?search=dodge">
+              <div class="card-img">
+                <img src="Resources/Logos marcas/DODGE.png" alt="">
+              </div>
+              <div class="card-cont">
+                <span class="title-brand">DODGE</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi voluptas.</p>
+              </div>
+            </a>
+          </div>
+          <div class="card-brand">
+            <a href="results.html?search=ford">
+              <div class="card-img">
+                <img src="Resources/Logos marcas/Ford_logo_PNG2.png" alt="">
+              </div>
+              <div class="card-cont">
+                <span class="title-brand">FORD</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi voluptas.</p>
+              </div>
+            </a>
+          </div>
+          <div class="card-brand">
+            <a href="results.html?search=gmc">
+              <div class="card-img">
+                <img src="Resources/Logos marcas/gmc-logo.png" alt="">
+              </div>
+              <div class="card-cont">
+                <span class="title-brand">GMC</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi voluptas.</p>
+              </div>
+            </a>
+          </div>
+          <div class="card-brand">
+            <a href="results.html?search=honda">
+              <div class="card-img">
+                <img src="Resources/Logos marcas/HONDA-LOGO.png" alt="">
+              </div>
+              <div class="card-cont">
+                <span class="title-brand">HONDA</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi voluptas.</p>
+              </div>
+            </a>
+          </div>
+          <div class="card-brand">
+            <a href="results.html?search=hummer">
+              <div class="card-img">
+                <img src="Resources/Logos marcas/Hummer-Logo.png" alt="">
+              </div>
+              <div class="card-cont">
+                <span class="title-brand">HUMMER</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi voluptas.</p>
+              </div>
+            </a>
+          </div>
+          <div class="card-brand">
+            <a href="results.html?search=hyundai">
+              <div class="card-img">
+                <img src="Resources/Logos marcas/HYUNDAI 2.png" alt="">
+              </div>
+              <div class="card-cont">
+                <span class="title-brand">HYUNDAI</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi voluptas.</p>
+              </div>
+            </a>
+          </div>
+          <div class="card-brand">
+            <a href="results.html?search=infiniti">
+              <div class="card-img">
+                <img src="Resources/Logos marcas/Infiniti-Logo.png" alt="">
+              </div>
+              <div class="card-cont">
+                <span class="title-brand">INFINITI</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi voluptas.</p>
+              </div>
+            </a>
+          </div>
+          <div class="card-brand">
+            <a href="results.html?search=jaguar">
+              <div class="card-img">
+                <img src="Resources/Logos marcas/jaguar.png" alt="">
+              </div>
+              <div class="card-cont">
+                <span class="title-brand">JAGUAR</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi voluptas.</p>
+              </div>
+            </a>
+          </div>
+          <div class="card-brand">
+            <a href="results.html?search=jeep">
+              <div class="card-img">
+                <img src="Resources/Logos marcas/JEEP.png" alt="">
+              </div>
+              <div class="card-cont">
+                <span class="title-brand">JEEP</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi voluptas.</p>
+              </div>
+            </a>
+          </div>
+          <div class="card-brand">
+            <a href="results.html?search=kia">
+              <div class="card-img">
+                <img src="Resources/Logos marcas/KIA.png" alt="">
+              </div>
+              <div class="card-cont">
+                <span class="title-brand">KIA</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi voluptas.</p>
+              </div>
+            </a>
+          </div>
+          <div class="card-brand">
+            <a href="results.html?search=landrover">
+              <div class="card-img">
+                <img src="Resources/Logos marcas/land-rover.png" alt="">
+              </div>
+              <div class="card-cont">
+                <span class="title-brand">LAND ROVER</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi voluptas.</p>
+              </div>
+            </a>
+          </div>
+          <div class="card-brand">
+            <a href="results.html?search=lexus">
+              <div class="card-img">
+                <img src="Resources/Logos marcas/Lexus.png" alt="">
+              </div>
+              <div class="card-cont">
+                <span class="title-brand">LEXUS</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi voluptas.</p>
+              </div>
+            </a>
+          </div>
+          <div class="card-brand">
+            <a href="results.html?search=lifan">
+              <div class="card-img">
+                <img src="Resources/Logos marcas/lifan.png" alt="">
+              </div>
+              <div class="card-cont">
+                <span class="title-brand">LIFAN</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi voluptas.</p>
+              </div>
+            </a>
+          </div>
+          <div class="card-brand">
+            <a href="results.html?search=lincoln">
+              <div class="card-img">
+                <img src="Resources/Logos marcas/Lincoln LOGO.png" alt="">
+              </div>
+              <div class="card-cont">
+                <span class="title-brand">LINCOLN</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi voluptas.</p>
+              </div>
+            </a>
+          </div>
+          <div class="card-brand">
+            <a href="results.html?search=mazda">
+              <div class="card-img">
+                <img src="Resources/Logos marcas/MAZDA.png" alt="">
+              </div>
+              <div class="card-cont">
+                <span class="title-brand">MAZDA</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi voluptas.</p>
+              </div>
+            </a>
+          </div>
+          <div class="card-brand">
+            <a href="results.html?search=mercedes-benz">
+              <div class="card-img">
+                <img src="Resources/Logos marcas/MERCEDES BENZ LOGO.png" alt="">
+              </div>
+              <div class="card-cont">
+                <span class="title-brand">MERCEDES BENZ</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi voluptas.</p>
+              </div>
+            </a>
+          </div>
+          <div class="card-brand">
+            <a href="results.html?search=mercury">
+              <div class="card-img">
+                <img src="Resources/Logos marcas/Mercury_Logo.png" alt="">
+              </div>
+              <div class="card-cont">
+                <span class="title-brand">MERCURY</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi voluptas.</p>
+              </div>
+            </a>
+          </div>
+          <div class="card-brand">
+            <a href="results.html?search=mini">
+              <div class="card-img">
+                <img src="Resources/Logos marcas/MINI.png" alt="">
+              </div>
+              <div class="card-cont">
+                <span class="title-brand">MINI</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi voluptas.</p>
+              </div>
+            </a>
+          </div>
+          <div class="card-brand">
+            <a href="results.html?search=mitsubishi">
+              <div class="card-img">
+                <img src="Resources/Logos marcas/MITSUBISHI.png" alt="">
+              </div>
+              <div class="card-cont">
+                <span class="title-brand">MITSUBISHI</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi voluptas.</p>
+              </div>
+            </a>
+          </div>
+          <div class="card-brand">
+            <a href="results.html?search=nissan">
+              <div class="card-img">
+                <img src="Resources/Logos marcas/Nissan-Logo.png" alt="">
+              </div>
+              <div class="card-cont">
+                <span class="title-brand">NISSAN</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi voluptas.</p>
+              </div>
+            </a>
+          </div>
+          <div class="card-brand">
+            <a href="results.html?search=pontiac">
+              <div class="card-img">
+                <img src="Resources/Logos marcas/PONTIAC.png" alt="">
+              </div>
+              <div class="card-cont">
+                <span class="title-brand">PONTIAC</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi voluptas.</p>
+              </div>
+            </a>
+          </div>
+          <div class="card-brand">
+            <a href="results.html?search=porsche">
+              <div class="card-img">
+                <img src="Resources/Logos marcas/Porsche.png" alt="">
+              </div>
+              <div class="card-cont">
+                <span class="title-brand">PORSCHE</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi voluptas.</p>
+              </div>
+            </a>
+          </div>
+          <div class="card-brand">
+            <a href="results.html?search=saab">
+              <div class="card-img">
+                <img src="Resources/Logos marcas/Saab-logo.png" alt="">
+              </div>
+              <div class="card-cont">
+                <span class="title-brand">SAAB</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi voluptas.</p>
+              </div>
+            </a>
+          </div>
+          <div class="card-brand">
+            <a href="results.html?search=saturn">
+              <div class="card-img">
+                <img src="Resources/Logos marcas/Saturn.png" alt="">
+              </div>
+              <div class="card-cont">
+                <span class="title-brand">SATURN</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi voluptas.</p>
+              </div>
+            </a>
+          </div>
+          <div class="card-brand">
+            <a href="results.html?search=scion">
+              <div class="card-img">
+                <img src="Resources/Logos marcas/Scion.png" alt="">
+              </div>
+              <div class="card-cont">
+                <span class="title-brand">SCION</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi voluptas.</p>
+              </div>
+            </a>
+          </div>
+          <div class="card-brand">
+            <a href="results.html?search=smart">
+              <div class="card-img">
+                <img src="Resources/Logos marcas/Smart.png" alt="">
+              </div>
+              <div class="card-cont">
+                <span class="title-brand">SMART</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi voluptas.</p>
+              </div>
+            </a>
+          </div>
+          <div class="card-brand">
+            <a href="results.html?search=ssangyong">
+              <div class="card-img">
+                <img src="Resources/Logos marcas/SsangYong.png" alt="">
+              </div>
+              <div class="card-cont">
+                <span class="title-brand">SSANGYONG</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi voluptas.</p>
+              </div>
+            </a>
+          </div>
+          <div class="card-brand">
+            <a href="results.html?search=subaru">
+              <div class="card-img">
+                <img src="Resources/Logos marcas/SUBARU.png" alt="">
+              </div>
+              <div class="card-cont">
+                <span class="title-brand">SUBARU</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi voluptas.</p>
+              </div>
+            </a>
+          </div>
+          <div class="card-brand">
+            <a href="results.html?search=suzuki">
+              <div class="card-img">
+                <img src="Resources/Logos marcas/Suzuki.png" alt="">
+              </div>
+              <div class="card-cont">
+                <span class="title-brand">SUZUKI</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi voluptas.</p>
+              </div>
+            </a>
+          </div>
+          <div class="card-brand">
+            <a href="results.html?search=toyota">
+              <div class="card-img">
+                <img src="Resources/Logos marcas/TOYOTA.png" alt="">
+              </div>
+              <div class="card-cont">
+                <span class="title-brand">TOYOTA</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi voluptas.</p>
+              </div>
+            </a>
+          </div>
+          <div class="card-brand">
+            <a href="results.html?search=volkswagen">
+              <div class="card-img">
+                <img src="Resources/Logos marcas/Volkswagen.png" alt="">
+              </div>
+              <div class="card-cont">
+                <span class="title-brand">VOLKSWAGEN</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi voluptas.</p>
+              </div>
+            </a>
+          </div>
+          <div class="card-brand">
+            <a href="results.html?search=volvo">
+              <div class="card-img">
+                <img src="Resources/Logos marcas/VOLVO LOGO.png" alt="">
+              </div>
+              <div class="card-cont">
+                <span class="title-brand">VOLVO</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi voluptas.</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="cont-questions">
+        <h1>Lista de opciones</h1>
+        <div class="cont-accordion">
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Opcion A
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem quo voluptas doloremque tempora nobis id. Maiores ullam vero debitis laudantium.
+                  <br>
+                  <br>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi doloremque adipisci non perspiciatis aperiam, aliquid corrupti quis et eligendi at praesentium minima dolor unde iusto?
+                    <br>
+                    <br>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi doloremque adipisci non perspiciatis aperiam, aliquid corrupti quis et eligendi at praesentium minima dolor unde iusto?
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Opcion B
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit ipsa quas, quaerat distinctio officiis perferendis quo omnis quae nisi? Neque in quibusdam excepturi aliquid! Alias molestias doloribus labore voluptate unde?
+                    <br>
+                    <br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore eligendi dolorem maxime iste, earum vero ab, asperiores dolore sapiente commodi aut maiores doloremque eos perferendis, placeat tempore doloribus necessitatibus qui repellendus expedita.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Opcion C
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea et quod, eos, deserunt iste consequatur quia doloremque quo nulla, dicta sequi? Et perferendis culpa a?
+                    <br>
+                    <br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis nulla reiciendis explicabo at tenetur, qui totam eaque laborum consectetur sit optio iste autem quis dolorum.
+                    <br>
+                    <br>
+                    1. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos harum in autem ratione eos atque iure dolorem, architecto suscipit odit unde error quisquam! Consequatur reiciendis cum consectetur placeat ut? Cum.
+                    <br>
+                    <br>
+                    2. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos harum in autem ratione eos atque iure dolorem, architecto suscipit odit unde error quisquam! Consequatur reiciendis cum consectetur placeat ut? Cum.
+                    <br>
+                    <br>
+                    3. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos harum in autem ratione eos atque iure dolorem, architecto suscipit odit unde error quisquam! Consequatur reiciendis cum consectetur placeat ut? Cum.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  Opcion D
+                </button>
+              </h2>
+              <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo doloremque delectus, ullam neque, fuga eos, aliquid quis tempore voluptates nesciunt facere accusamus sapiente!
+                    <br>
+                    <br>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt cumque sed est aliquid cupiditate adipisci corrupti officia atque. Similique libero rem quibusdam cumque, enim at?
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                  Opcion E
+                </button>
+              </h2>
+              <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Est harum enim deleniti necessitatibus! Velit, amet cumque delectus nobis rem fugiat ab. Eos, tempore doloribus odio quibusdam asperiores aliquam eligendi atque!
+                    <br>
+                    <br>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate, accusantium. Dicta quaerat sequi corporis eum aspernatur unde? Nam tempora aspernatur deleniti reiciendis officiis consectetur tempore obcaecati placeat soluta suscipit corporis sunt velit aperiam enim accusantium, assumenda debitis cupiditate ea expedita?
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="cont-service">
+        <div>
+          <div class="cont-content">
+            <hr>
+            <h1>¿Necesitas ayuda?</h1>
+            <p>
+              <strong>Visita nuestros talleres</strong> y con gusto te ayudaremos.
+              <br>
+              <br>
+              Ponte en contacto con nuestro equipo
+              </p>
+          </div>
+          <div class="cont-img">
+            <img src="./Resources/llave.png" alt="">
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <section class="top">
+        <img src="Resources/logo-general.png" alt="">
+        <ul>
+          <li>
+            <h3>Opciones</h3>
+            <a href="#">Opcion A</a>
+            <a href="#">Opcion B</a>
+            <a href="#">Opcion C</a>
+          </li>
+          <li>
+            <h3>Politica</h3>
+            <a href="#">Política de Privacidad</a>
+            <a href="#">Política de Cookies</a>
+            <a href="#">Aviso Legal</a>
+          </li>
+          <li>
+            <h3>Horario de atencion</h3>
+            <a href="#">24 horas</a>
+          </li>
+          <li>
+            <h3>Contacto</h3>
+            <a href="#">WhatsApp</a>
+            <a href="#">Gmail</a>
+          </li>
+        </ul>
+      </section>
+      <section class="bottom" style="color: rgb(73, 73, 73);"> Dev <span style="color: crimson;">Alpha</span></section>
+    </footer>
+   
+    <script src="Js/js bootstrap/bootstrap.js"></script>
+    <script src="Js/main.js" type="module"></script>
+</body>
+</html>
