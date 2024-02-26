@@ -27,10 +27,8 @@ function obtener_valor(variable) {
         var pos_separador = url.indexOf("&", variable_pos);
 
     if (pos_separador != -1) {
-        console.log(url.substring(variable_pos + variable_may.length + 1, url.length));
         return url.substring(variable_pos + variable_may.length + 1, pos_separador);
     } else {
-        console.log(url.substring(variable_pos + variable_may.length + 21, url.length));
         return url.substring(variable_pos + variable_may.length + 21, url.length);
     }
     } else {
@@ -46,7 +44,6 @@ function getData(data, valor) {
     
     let stringSet = valor;
     stringSet = stringSet.toLowerCase();
-    console.log(stringSet.toLowerCase());
     for (let i = 0; i < data[0].cars.length; i++) {
         let string = data[0].cars[i].brand.toLowerCase();
         let brandUp = string.split(" ").join("");
@@ -114,6 +111,7 @@ function getData(data, valor) {
             let str = result[i].Img;
             let newStr = str.slice(2);
             imgLogo.src = "https://alpha-a19.github.io/Automovil-search" + newStr;
+            console.log(imgLogo.src);
             
             DivchB.id = "chB-result-search-" + i
             let texA = document.createElement("h2");
